@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>In Card Visit</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f0f0f0;
+    }
+    .card {
+      width: 350px;
+      height: 200px;
+      background: white;
+      border: 2px solid #333;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .title {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .contact {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    @media print {
+      body {
+        background: none;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="name">Nguyễn Thanh Long</div>
+    <div class="title">Lập trình</div>
+    <div class="contact">
+      📧 Email: nguyenthanhlong.iotcuchi.edu.vn<br>
+      📞 SĐT: 0942460643<br>
+      🌐 Website: nlion.edu.vn
+    </div>
+  </div>
+
+  <script>
+    // Tự động bật hộp thoại in
+    window.onload = function () {
+      window.print();
+    };
+  </script>
+
+</body>
+</html>
